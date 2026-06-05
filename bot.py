@@ -186,13 +186,13 @@ def kb_kembali():
 
 def teks_home(nama):
     return (
-        "Halo <b>{}</b>!\n\n"
-        "Selamat datang di <b>{}</b>\n"
-        "Toko produk digital terpercaya.\n\n"
-        "✅ Produk langsung dikirim otomatis\n"
-        "✅ Pembayaran aman &amp; terverifikasi\n"
-        "✅ Support 24 jam siap membantu\n\n"
-        "Pilih menu di bawah:"
+        "Hello <b>{}</b> 👋\n\n"
+        "Welcome to <b>{}</b>\n"
+        "Fast &amp; Trusted KYC Service.\n\n"
+        "✅ Products delivered instantly &amp; automatically\n"
+        "✅ Safe &amp; verified payments\n"
+        "✅ 24/7 support ready to help\n\n"
+        "Choose a menu below:"
     ).format(nama, STORE_NAME)
 
 # ══════════════════════════════════════════════
