@@ -35,7 +35,7 @@ STORE_NAME = os.getenv("STORE_NAME", "ZaeonX Store")
 BANK_INFO  = os.getenv("BANK_INFO",  "DANA 089875561517")
 
 # URL foto welcome (ganti dengan foto toko kamu, atau None)
-WELCOME_PHOTO = os.getenv("WELCOME_PHOTO", None)
+WELCOME_PHOTO = os.getenv("WELCOME_PHOTO", "AgACAgUAAxkBAAFLk3lqIsOFwMItpCFNV0PYY5t0RSORyQACXhJrG4q-GFXkF28eqyLDpAEAAwIAA3kAAzsE")
 
 # ══════════════════════════════════════════════
 #  PRODUK
