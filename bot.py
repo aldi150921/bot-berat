@@ -186,9 +186,12 @@ def kb_kembali():
 
 def teks_home(nama):
     return (
-        "Halo *{}*!\n\n"
-        "Selamat datang di *{}*\n"
+        "Halo <b>{}</b>!\n\n"
+        "Selamat datang di <b>{}</b>\n"
         "Toko produk digital terpercaya.\n\n"
+        "✅ Produk langsung dikirim otomatis\n"
+        "✅ Pembayaran aman &amp; terverifikasi\n"
+        "✅ Support 24 jam siap membantu\n\n"
         "Pilih menu di bawah:"
     ).format(nama, STORE_NAME)
 
@@ -204,17 +207,17 @@ async def cmd_start(update: Update, ctx: ContextTypes.DEFAULT_TYPE):
     kb = kb_main_admin() if u.id == ADMIN_ID else kb_main()
     teks = teks_home(u.first_name)
 
-    if WELCOME_PHOTO:
+if WELCOME_PHOTO:
         msg = await update.message.reply_photo(
             photo=WELCOME_PHOTO,
             caption=teks,
-            parse_mode="Markdown",
+            parse_mode="HTML",
             reply_markup=kb
         )
     else:
         msg = await update.message.reply_text(
             teks,
-            parse_mode="Markdown",
+            parse_mode="HTML",
             reply_markup=kb
         )
     # simpan message_id untuk di-edit nanti
